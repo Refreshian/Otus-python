@@ -10,9 +10,9 @@ def power_numbers(list_numbers):
 
 
 # filter types
-# ODD = "odd"
-# EVEN = "even"
-# PRIME = "prime"
+ODD = "odd"
+EVEN = "even"
+PRIME = "prime"
 
 def filter_numbers(list_num, arg=None):
     if arg == "odd":
