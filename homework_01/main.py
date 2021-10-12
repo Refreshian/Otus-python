@@ -3,10 +3,11 @@
 Функции и структуры данных
 """
 
-
-def power_numbers(list_numbers):
-    return [x**2 for x in list_numbers]
-
+def power_numbers(*nums):
+    a = []
+    for n in nums:
+        a.append(n**2)
+    return a
 
 
 # filter types
@@ -15,9 +16,9 @@ EVEN = "even"
 PRIME = "prime"
 
 def filter_numbers(list_num, arg=None):
-    if arg == "odd":
-        return [x for x in list_num if x%2==0]
     if arg == "even":
+        return [x for x in list_num if x%2==0]
+    if arg == "odd":
         return [x for x in list_num if x%2!=0]
     if arg == "prime":
         a = []
@@ -32,3 +33,5 @@ def filter_numbers(list_num, arg=None):
                 a.append(i)
         return a
 # print(filter_numbers([1,2,3,4,5], "odd"))
+
+print(power_numbers(1, 2))
