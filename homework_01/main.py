@@ -29,8 +29,6 @@ def filter_numbers(list_num, arg=None):
                     d += 1
                 if d == i:
                     a.append(i)
-            # else:
-            #     a.append(i)
         return a
 
 
