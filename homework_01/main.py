@@ -34,4 +34,4 @@ def filter_numbers(list_num, arg=None):
         return a
 
 
-print(filter_numbers([1, 2], PRIME))
+# print(filter_numbers([1, 2], PRIME))
