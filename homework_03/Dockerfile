@@ -2,10 +2,10 @@ FROM python:3.9-buster
 
 WORKDIR /var/app
 
-COPY ..
+COPY ./requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY blog .
+COPY ..
 
 EXPOSE 8000
 
