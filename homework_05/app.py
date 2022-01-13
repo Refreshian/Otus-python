@@ -20,7 +20,7 @@ def index():
     return render_template('hello.html')
 
 
-@app.route('/about', endpoint='about')
+@app.route('/about/', endpoint='about')
 def about():
     return render_template('about.html')
 
